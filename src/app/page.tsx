@@ -259,7 +259,7 @@ export default function Home() {
           A new blockchain experience. No fees. No friction. Just pure, instant
           value—open to all. The future is feeless.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col sm:flex-row gap-4 flex-wrap justify-center">
           <button
             onClick={() => setShowCommunityModal(true)}
             className="inline-block px-10 py-4 rounded-full bg-gradient-to-r from-blue-500 via-fuchsia-500 to-yellow-400 text-black font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300 animate-fade-in delay-300"
@@ -271,6 +271,18 @@ export default function Home() {
             className="inline-block px-10 py-4 rounded-full bg-white/10 border border-white/20 text-white font-bold text-lg shadow-xl hover:scale-105 hover:bg-white/20 transition-all duration-300 animate-fade-in delay-400"
           >
             Explore the Tech
+          </button>
+          <button
+            onClick={() => (window.location.href = "/docs")}
+            className="inline-block px-10 py-4 rounded-full bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-blue-400 text-black font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300 animate-fade-in delay-500"
+          >
+            Start mining
+          </button>
+          <button
+            onClick={() => (window.location.href = "/dev-docs")}
+            className="inline-block px-10 py-4 rounded-full bg-gradient-to-r from-fuchsia-400 via-blue-400 to-yellow-400 text-black font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300 animate-fade-in delay-600"
+          >
+            Develop with Feeless
           </button>
         </div>
       </section>
