@@ -223,7 +223,14 @@ export default function DocsPage() {
           ))}
         </div>
       </section>
-
+      <div className="flex justify-center w-full">
+        <a
+          href="/host-how"
+          className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 via-fuchsia-500 to-yellow-400 text-black font-bold text-lg shadow-lg hover:scale-105 transition"
+        >
+          Set up a node
+        </a>
+      </div>
       {/* FAQ / Troubleshooting */}
       <section className="w-full py-20 px-4">
         <div className="max-w-2xl mx-auto">
