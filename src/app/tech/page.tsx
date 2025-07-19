@@ -226,7 +226,7 @@ export default function TechPage() {
       {/* Navbar */}
       <header className="w-full py-6 px-6 flex items-center justify-between animate-slide-down">
         <span className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-blue-400 via-fuchsia-400 to-yellow-300 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
-          Feeless Node
+          FeeLess Node
         </span>
         <nav className="hidden md:flex gap-8 ml-8">
           <button
@@ -275,14 +275,14 @@ export default function TechPage() {
       {/* Hero Section */}
       <section className="flex-1 flex flex-col items-center justify-center text-center px-4 animate-scale-in py-20">
         <div className="mb-6 animate-fade-in">
-          <span className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-yellow-400/20 to-orange-400/20 border border-yellow-400/30 text-yellow-300 font-semibold text-sm uppercase tracking-wider">
+          <span className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-blue-400/20 to-fuchsia-400/20 border border-blue-400/30 text-blue-300 font-semibold text-sm uppercase tracking-wider">
             🚀 Revolutionary Mining Model
           </span>
         </div>
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-8 bg-gradient-to-r from-blue-400 via-fuchsia-400 to-yellow-300 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
           First Blockchain with
           <br />
-          <span className="text-5xl md:text-7xl bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent">
+          <span className="text-5xl md:text-7xl bg-gradient-to-r from-blue-400 via-fuchsia-400 to-yellow-300 bg-clip-text text-transparent">
             Minable Tokens
           </span>
         </h1>
@@ -311,7 +311,7 @@ export default function TechPage() {
         <div className="flex gap-4 animate-fade-in delay-400">
           <button
             onClick={() => scrollToSection("minable-tokens")}
-            className="px-8 py-3 rounded-full bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 text-black font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300"
+            className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 via-fuchsia-500 to-yellow-400 text-black font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300"
           >
             Discover Minable Tokens
           </button>
@@ -331,16 +331,16 @@ export default function TechPage() {
       >
         {/* Additional background effects for this section */}
         <div className="absolute inset-0 -z-10">
-          <div className="absolute left-1/4 top-1/4 w-96 h-96 bg-gradient-to-br from-yellow-600/30 to-orange-600/30 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute right-1/4 bottom-1/4 w-96 h-96 bg-gradient-to-br from-red-600/20 to-pink-600/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute left-1/4 top-1/4 w-96 h-96 bg-gradient-to-br from-blue-600/30 to-fuchsia-600/30 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute right-1/4 bottom-1/4 w-96 h-96 bg-gradient-to-br from-fuchsia-600/20 to-yellow-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
 
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
-            <div className="scroll-animate opacity-0 translate-y-10 inline-block px-8 py-3 rounded-full bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-400/40 text-yellow-300 font-bold text-lg uppercase tracking-wider mb-8">
+            <div className="scroll-animate opacity-0 translate-y-10 inline-block px-8 py-3 rounded-full bg-gradient-to-r from-blue-500/20 to-fuchsia-500/20 border border-blue-400/40 text-blue-300 font-bold text-lg uppercase tracking-wider mb-8">
               🔥 World's First Minable Token System
             </div>
-            <h2 className="scroll-animate opacity-0 translate-y-10 text-4xl md:text-6xl font-extrabold text-center mb-8 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
+            <h2 className="scroll-animate opacity-0 translate-y-10 text-4xl md:text-6xl font-extrabold text-center mb-8 bg-gradient-to-r from-blue-400 via-fuchsia-400 to-yellow-300 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
               Choose Your Reward
             </h2>
             <p className="scroll-animate opacity-0 translate-y-10 text-xl md:text-2xl text-white/80 max-w-4xl mx-auto mb-12">
@@ -355,11 +355,11 @@ export default function TechPage() {
 
           {/* How It Works */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
-            <div className="scroll-animate opacity-0 translate-y-10 bg-gradient-to-br from-yellow-900/20 to-orange-900/20 backdrop-blur-xl border border-yellow-400/30 rounded-3xl p-8 text-center hover:scale-105 transition-all duration-300">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-yellow-400 to-orange-400 flex items-center justify-center text-black text-3xl font-bold shadow-2xl">
+            <div className="scroll-animate opacity-0 translate-y-10 bg-gradient-to-br from-blue-900/20 to-fuchsia-900/20 backdrop-blur-xl border border-blue-400/30 rounded-3xl p-8 text-center hover:scale-105 transition-all duration-300">
+              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-400 to-fuchsia-400 flex items-center justify-center text-black text-3xl font-bold shadow-2xl">
                 1
               </div>
-              <h3 className="text-2xl font-bold text-yellow-300 mb-4">
+              <h3 className="text-2xl font-bold text-blue-300 mb-4">
                 Mine Any Token
               </h3>
               <p className="text-white/80 text-lg">
@@ -369,13 +369,13 @@ export default function TechPage() {
             </div>
 
             <div
-              className="scroll-animate opacity-0 translate-y-10 bg-gradient-to-br from-orange-900/20 to-red-900/20 backdrop-blur-xl border border-orange-400/30 rounded-3xl p-8 text-center hover:scale-105 transition-all duration-300"
+              className="scroll-animate opacity-0 translate-y-10 bg-gradient-to-br from-fuchsia-900/20 to-yellow-900/20 backdrop-blur-xl border border-fuchsia-400/30 rounded-3xl p-8 text-center hover:scale-105 transition-all duration-300"
               style={{ transitionDelay: "100ms" }}
             >
-              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-orange-400 to-red-400 flex items-center justify-center text-black text-3xl font-bold shadow-2xl">
+              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-fuchsia-400 to-yellow-400 flex items-center justify-center text-black text-3xl font-bold shadow-2xl">
                 2
               </div>
-              <h3 className="text-2xl font-bold text-orange-300 mb-4">
+              <h3 className="text-2xl font-bold text-fuchsia-300 mb-4">
                 Earn Rewards
               </h3>
               <p className="text-white/80 text-lg">
@@ -385,13 +385,13 @@ export default function TechPage() {
             </div>
 
             <div
-              className="scroll-animate opacity-0 translate-y-10 bg-gradient-to-br from-red-900/20 to-pink-900/20 backdrop-blur-xl border border-red-400/30 rounded-3xl p-8 text-center hover:scale-105 transition-all duration-300"
+              className="scroll-animate opacity-0 translate-y-10 bg-gradient-to-br from-yellow-900/20 to-blue-900/20 backdrop-blur-xl border border-yellow-400/30 rounded-3xl p-8 text-center hover:scale-105 transition-all duration-300"
               style={{ transitionDelay: "200ms" }}
             >
-              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-red-400 to-pink-400 flex items-center justify-center text-black text-3xl font-bold shadow-2xl">
+              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-yellow-400 to-blue-400 flex items-center justify-center text-black text-3xl font-bold shadow-2xl">
                 3
               </div>
-              <h3 className="text-2xl font-bold text-red-300 mb-4">
+              <h3 className="text-2xl font-bold text-yellow-300 mb-4">
                 Create Value
               </h3>
               <p className="text-white/80 text-lg">
@@ -402,18 +402,18 @@ export default function TechPage() {
           </div>
 
           {/* Key Benefits */}
-          <div className="scroll-animate opacity-0 translate-y-10 bg-gradient-to-r from-yellow-900/10 via-orange-900/10 to-red-900/10 backdrop-blur-xl border border-gradient-to-r border-yellow-400/20 rounded-3xl p-12 mb-20">
-            <h3 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
+          <div className="scroll-animate opacity-0 translate-y-10 bg-gradient-to-r from-blue-900/10 via-fuchsia-900/10 to-yellow-900/10 backdrop-blur-xl border border-gradient-to-r border-blue-400/20 rounded-3xl p-12 mb-20">
+            <h3 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-fuchsia-400 bg-clip-text text-transparent">
               Revolutionary Benefits
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-yellow-400 to-orange-400 flex items-center justify-center text-black font-bold text-lg flex-shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-400 to-fuchsia-400 flex items-center justify-center text-black font-bold text-lg flex-shrink-0">
                     💰
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-yellow-300 mb-2">
+                    <h4 className="text-xl font-bold text-blue-300 mb-2">
                       Intrinsic Token Value
                     </h4>
                     <p className="text-white/70">
@@ -423,11 +423,11 @@ export default function TechPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-red-400 flex items-center justify-center text-black font-bold text-lg flex-shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-fuchsia-400 to-yellow-400 flex items-center justify-center text-black font-bold text-lg flex-shrink-0">
                     🎯
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-orange-300 mb-2">
+                    <h4 className="text-xl font-bold text-fuchsia-300 mb-2">
                       Strategic Investment
                     </h4>
                     <p className="text-white/70">
@@ -437,11 +437,11 @@ export default function TechPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-red-400 to-pink-400 flex items-center justify-center text-black font-bold text-lg flex-shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-yellow-400 to-blue-400 flex items-center justify-center text-black font-bold text-lg flex-shrink-0">
                     🚀
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-red-300 mb-2">
+                    <h4 className="text-xl font-bold text-yellow-300 mb-2">
                       Project Bootstrapping
                     </h4>
                     <p className="text-white/70">
@@ -453,7 +453,7 @@ export default function TechPage() {
               </div>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-pink-400 to-purple-400 flex items-center justify-center text-black font-bold text-lg flex-shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-400 to-indigo-400 flex items-center justify-center text-black font-bold text-lg flex-shrink-0">
                     🌐
                   </div>
                   <div>
@@ -513,7 +513,7 @@ export default function TechPage() {
                 // A gaming project launches $GAME token
               </div>
               <div className="text-white/80 mb-2">
-                1. Project creates $GAME token on Feeless Node
+                1. Project creates $GAME token on FeeLess Node
               </div>
               <div className="text-white/80 mb-2">
                 2. Miners choose to mine $GAME instead of FLSS
@@ -674,7 +674,7 @@ export default function TechPage() {
                 </ul>
               </div>
             </div>
-            <div className="mt-8 p-6 bg-gradient-to-r from-yellow-900/20 to-orange-900/20 rounded-xl border border-yellow-400/20">
+            <div className="mt-8 p-6 bg-gradient-to-r from-blue-900/20 to-fuchsia-900/20 rounded-xl border border-blue-400/20">
               <div className="text-center">
                 <h4 className="text-xl font-bold text-yellow-300 mb-2">
                   🎯 Game-Changing Innovation
@@ -772,7 +772,7 @@ export default function TechPage() {
           </h2>
           <p className="text-lg text-white/80 mb-8">
             Join our community of developers, miners, and visionaries building
-            the next generation of feeless blockchain technology.
+            the next generation of FeeLess blockchain technology.
           </p>
           <div className="flex gap-4 justify-center">
             <button className="bg-gradient-to-r from-blue-500 via-fuchsia-500 to-yellow-400 text-black px-8 py-3 rounded-full font-bold text-lg shadow-lg hover:scale-105 transition">
@@ -798,7 +798,7 @@ export default function TechPage() {
             Whitepaper
           </a>
         </div>
-        <span>&copy; {new Date().getFullYear()} Feeless Node</span>
+        <span>&copy; {new Date().getFullYear()} FeeLess Node</span>
       </footer>
 
       <style jsx>{`
@@ -908,10 +908,10 @@ export default function TechPage() {
         }
 
         .animate-shimmer {
-          animation: shimmer 2s infinite linear;
+          animation: shimmer 4s infinite linear;
         }
         .animate-breathe {
-          animation: breathe 4s infinite ease-in-out;
+          animation: breathe 8s infinite ease-in-out;
         }
         .animate-float {
           animation: float 6s infinite ease-in-out;

@@ -27,7 +27,7 @@ function useScrollObserver() {
 const wizardSteps = [
   {
     label: "Install Miner",
-    desc: "Install the Feeless Node package globally (includes the miner utility).",
+    desc: "Install the FeeLess Node package globally (includes the miner utility).",
     code: "npm install -g feeless-node",
     color: "from-blue-400 via-fuchsia-400 to-yellow-300",
   },
@@ -190,10 +190,10 @@ export default function DocsPage() {
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center px-4 py-24 animate-scale-in">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-6 bg-gradient-to-r from-blue-400 via-fuchsia-400 to-yellow-300 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
-          Feeless Miner Setup
+          FeeLess Miner Setup
         </h1>
         <p className="text-lg md:text-2xl text-white/80 max-w-2xl mx-auto mb-8 animate-fade-in delay-200">
-          Get mining in minutes. Follow the steps, use the wizard, and join the next-gen feeless network.
+          Get mining in minutes. Follow the steps, use the wizard, and join the next-gen FeeLess network.
         </p>
       </section>
 

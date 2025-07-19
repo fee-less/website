@@ -14,14 +14,14 @@ export default function HostNodeHowPage() {
     <main className="relative min-h-screen flex flex-col bg-black text-white overflow-hidden px-4 pb-16">
       <div className="max-w-2xl mx-auto mt-16">
         <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-fuchsia-400 to-yellow-300 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
-          How to Host a Feeless Node
+          How to Host a FeeLess Node
         </h1>
         <p className="text-lg mb-8 text-white/80">
-          This guide walks you through installing and running a Feeless node on your own server or computer. You'll be up and running in minutes.
+          This guide walks you through installing and running a FeeLess node on your own server or computer. You'll be up and running in minutes.
         </p>
         <ol className="list-decimal ml-6 space-y-8 text-white/90">
           <li>
-            <h2 className="text-2xl font-semibold mb-2 text-fuchsia-400">Install Feeless Node Globally</h2>
+            <h2 className="text-2xl font-semibold mb-2 text-fuchsia-400">Install FeeLess Node Globally</h2>
             <p>Install the node package globally using npm:</p>
             <CodeBlock>npm install -g feeless-node</CodeBlock>
             <p className="text-xs text-white/60">(You may need to use <b>sudo</b> on Linux/Mac.)</p>

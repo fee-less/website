@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Feeless",
-  description: "Feeless - the first ever truely feeless network.",
+  title: "FeeLess",
+  description: "FeeLess - the first ever truly feeless network.",
   icons: "logo.svg"
 };
 

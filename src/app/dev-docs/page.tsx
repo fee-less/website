@@ -115,17 +115,17 @@ export default function DevDocsPage() {
     <main className="relative min-h-screen flex bg-black text-white overflow-x-hidden">
       <SideNav />
       <div className="flex-1 max-w-6xl mx-auto px-4 md:px-12 py-24 lg:pl-72">
-        <h1 className="text-4xl font-extrabold mb-10 text-center text-white">Feeless Developer Reference</h1>
+        <h1 className="text-4xl font-extrabold mb-10 text-center text-white">FeeLess Developer Reference</h1>
 
         {/* feeless-utils */}
         <SectionHeading id="feeless-utils">feeless-utils</SectionHeading>
-        <p className="mb-8 text-white/80">Core utility and type library for Feeless. Provides cryptography, types, reward/difficulty calculations, and the <span className="font-mono">FeelessClient</span> for node interaction.</p>
+        <p className="mb-8 text-white/80">Core utility and type library for FeeLess. Provides cryptography, types, reward/difficulty calculations, and the <span className="font-mono">FeelessClient</span> for node interaction.</p>
 
         {/* Types */}
         <SectionHeading id="feeless-utils-types">Types</SectionHeading>
         <SubHeading id="type-Transaction">Transaction</SubHeading>
         <Signature>{`type Transaction = { sender: string; receiver: string; amount: number; signature: string; nonce: number; timestamp: number; token?: string; mint?: TokenMint; }`}</Signature>
-        <p className="mb-2 text-white/70">A transaction on the Feeless network.</p>
+        <p className="mb-2 text-white/70">A transaction on the FeeLess network.</p>
         <ParamTable params={[
           { name: "sender", type: "string", desc: "Sender public key (hex)" },
           { name: "receiver", type: "string", desc: "Receiver public key (hex)" },
@@ -139,7 +139,7 @@ export default function DevDocsPage() {
 
         <SubHeading id="type-Block">Block</SubHeading>
         <Signature>{`type Block = { timestamp: number; transactions: Transaction[]; prev_hash: string; nonce: number; signature: string; proposer: string; hash: string; }`}</Signature>
-        <p className="mb-2 text-white/70">A block in the Feeless blockchain.</p>
+        <p className="mb-2 text-white/70">A block in the FeeLess blockchain.</p>
         <ParamTable params={[
           { name: "timestamp", type: "number", desc: "Unix ms" },
           { name: "transactions", type: "Transaction[]", desc: "Block transactions" },
@@ -222,7 +222,7 @@ export default function DevDocsPage() {
         {/* Class: FeelessClient */}
         <SectionHeading id="feeless-utils-class">Class: FeelessClient</SectionHeading>
         <Signature>{`new FeelessClient(wsUrl: string, httpUrl: string, privateKey: string)`}</Signature>
-        <p className="mb-2 text-white/70">WebSocket+HTTP client for interacting with a Feeless node.</p>
+        <p className="mb-2 text-white/70">WebSocket+HTTP client for interacting with a FeeLess node.</p>
         <SubHeading id="method-init">init()</SubHeading>
         <Signature>{`init(): Promise<boolean>`}</Signature>
         <p className="mb-2 text-white/70">Connect and initialize client.</p>
@@ -332,7 +332,7 @@ export default function DevDocsPage() {
 
         {/* feeless-node */}
         <SectionHeading id="feeless-node">feeless-node</SectionHeading>
-        <p className="mb-8 text-white/80">Reference implementation of the Feeless protocol. Provides a full node, mining, P2P, HTTP API, and consensus logic.</p>
+        <p className="mb-8 text-white/80">Reference implementation of the FeeLess protocol. Provides a full node, mining, P2P, HTTP API, and consensus logic.</p>
 
         <SectionHeading id="feeless-node-cli">CLI</SectionHeading>
         <Signature>{`npm install -g feeless-node`}</Signature>
@@ -369,7 +369,7 @@ export default function DevDocsPage() {
 
         <SectionHeading id="feeless-node-webhooks">Webhooks</SectionHeading>
         <p className="mb-4 text-white/80">
-          Feeless node supports outbound webhooks for automation and integrations. Configure <span className="font-mono">webhooks.json</span> in your node directory to POST to external URLs on new blocks, transactions, or mints.
+          FeeLess node supports outbound webhooks for automation and integrations. Configure <span className="font-mono">webhooks.json</span> in your node directory to POST to external URLs on new blocks, transactions, or mints.
         </p>
         <SubHeading id="webhooks-config">Configuration</SubHeading>
         <p className="mb-2 text-white/70">Create a <span className="font-mono">webhooks.json</span> file in your node directory. Example:</p>

@@ -211,7 +211,7 @@ export default function Home() {
       {/* Navbar with slide-down animation */}
       <header className="w-full py-6 px-6 flex items-center justify-between animate-slide-down">
         <span className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-blue-400 via-fuchsia-400 to-yellow-300 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
-          Feeless
+          FeeLess
         </span>
         <nav className="hidden md:flex gap-8 ml-8">
           <a
@@ -222,7 +222,7 @@ export default function Home() {
             }}
             className="hover:text-fuchsia-400 transition"
           >
-            Why Feeless?
+            Why FeeLess?
           </a>
           <a
             href="#how"
@@ -253,7 +253,7 @@ export default function Home() {
       {/* Hero Section with scale-in animation */}
       <section className="flex-1 flex flex-col items-center justify-center text-center px-4 animate-scale-in">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-8 bg-gradient-to-r from-blue-400 via-fuchsia-400 to-yellow-300 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
-          Effortless. Feeless. For Everyone.
+          Effortless. FeeLess. For Everyone.
         </h1>
         <p className="text-lg md:text-2xl text-white/80 max-w-2xl mx-auto mb-12 animate-fade-in delay-200">
           A new blockchain experience. No fees. No friction. Just pure, instant
@@ -282,7 +282,7 @@ export default function Home() {
             onClick={() => (window.location.href = "/dev-docs")}
             className="inline-block px-10 py-4 rounded-full bg-gradient-to-r from-fuchsia-400 via-blue-400 to-yellow-400 text-black font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300 animate-fade-in delay-600"
           >
-            Develop with Feeless
+            Develop with FeeLess
           </button>
         </div>
       </section>
@@ -405,7 +405,7 @@ export default function Home() {
             How It Works
           </h2>
           <div className="text-lg text-white/80 mb-8 text-center max-w-xl">
-            Effortless, instant, and open to all. See how you can use Feeless in
+            Effortless, instant, and open to all. See how you can use FeeLess in
             just a few steps.
           </div>
           <button
@@ -644,7 +644,7 @@ export default function Home() {
             Twitter
           </a>
         </div>
-        <span>&copy; {new Date().getFullYear()} Feeless</span>
+        <span>&copy; {new Date().getFullYear()} FeeLess</span>
       </footer>
     </main>
   );
