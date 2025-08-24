@@ -117,7 +117,7 @@ const tokenomicsData = [
     value: "100,000,000 FLSS",
     color: "text-yellow-400",
   },
-  { label: "Dev Fee", value: "9% per block", color: "text-green-400" },
+  { label: "Dev Fee", value: "7% per block", color: "text-green-400" },
 ];
 
 const useCases = [

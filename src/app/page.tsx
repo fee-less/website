@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const reasons = [
   {
@@ -172,12 +173,16 @@ function scrollToId(id: string) {
 export default function Home() {
   const [showHowModal, setShowHowModal] = useState(false);
   const [showCommunityModal, setShowCommunityModal] = useState(false);
+  const [exchange, setExchange] = useState<any>();
 
   useScrollObserver();
 
   // Add smooth scroll
   React.useEffect(() => {
     document.body.classList.add("scroll-smooth");
+    fetch("https://zercex.xyz/api/v1/ticker?market=FLSS/USDC")
+      .then((res) => res.json())
+      .then((d) => setExchange(d));
     return () => document.body.classList.remove("scroll-smooth");
   }, []);
 
@@ -398,7 +403,107 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How it works Section (summary + modal) */}
+      <section id="price" className="w-full py-24 px-4">
+        <div className="max-w-4xl mx-auto flex flex-col items-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white/90 tracking-tight">
+            Trading
+          </h2>
+          <div className="text-lg text-white/80 mb-8 text-center max-w-xl">
+            <strong>FeeLess</strong> is tradable on{" "}
+            <a
+              href="https://zercex.xyz"
+              className="underline hover:no-underline text-blue-400"
+            >
+              ZerCEX
+            </a>
+          </div>
+          {exchange && (
+            <div className="w-full max-w-2xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 mt-6">
+              <div className="flex flex-col items-center justify-center p-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-xl hover:scale-105 transition">
+                <span className="text-sm text-white/60">Price</span>
+                <span className="text-2xl font-bold text-white mt-1">
+                  {Math.round(exchange.last_price * 10000) / 10000}$
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center p-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-xl hover:scale-105 transition">
+                <span className="text-sm text-white/60">24h Change</span>
+                <span
+                  className={`text-2xl font-bold mt-1 ${
+                    parseFloat(exchange.price_change_percent) >= 0
+                      ? "text-green-400"
+                      : "text-red-400"
+                  }`}
+                >
+                  {exchange.price_change_percent}%
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center p-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-xl hover:scale-105 transition">
+                <span className="text-sm text-white/60">High</span>
+                <span className="text-2xl font-bold text-white mt-1">
+                  {Math.round(exchange.high * 10000) / 10000}$
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center p-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-xl hover:scale-105 transition">
+                <span className="text-sm text-white/60">Low</span>
+                <span className="text-2xl font-bold text-white mt-1">
+                  {Math.round(exchange.low * 10000) / 10000}$
+                </span>
+              </div>
+            </div>
+          )}
+        </div>
+      </section>
+
+      <section id="wallet" className="w-full py-24 px-4">
+        <div className="max-w-4xl mx-auto flex flex-col items-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white/90 tracking-tight">
+            Wallet
+          </h2>
+          <div className="text-lg text-white/80 mb-8 text-center max-w-xl">
+            The official wallet for <strong>FeeLess</strong> can be installed
+            with one click via the chrome web store.
+          </div>
+          <button
+            onClick={() =>
+              (document.location.href =
+                "https://chromewebstore.google.com/detail/feeless-vault/ondleofcljjhfhkkpbkdonbbbjifnpbe")
+            }
+            className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 via-fuchsia-500 to-yellow-400 text-black font-bold text-lg shadow-lg hover:scale-105 transition mb-5"
+          >
+            Install for Chrome
+          </button>
+          <button
+            onClick={() =>
+              (document.location.href =
+                "https://github.com/fee-less/feeless-wallet/releases")
+            }
+            className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 via-fuchsia-500 to-yellow-400 text-black font-bold text-lg shadow-lg hover:scale-105 transition"
+          >
+            Install for PC
+          </button>
+        </div>
+      </section>
+
+      <section id="whitepaper" className="w-full py-24 px-4">
+        <div className="max-w-4xl mx-auto flex flex-col items-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white/90 tracking-tight">
+            Whitepaper
+          </h2>
+          <div className="text-lg text-white/80 mb-8 text-center max-w-xl">
+            Get to know the tech details of <strong>FeeLess</strong> by reading the whitepaper!
+          </div>
+          <button
+            onClick={() =>
+              (document.location.href =
+                "/whitepaper")
+            }
+            className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 via-fuchsia-500 to-yellow-400 text-black font-bold text-lg shadow-lg hover:scale-105 transition mb-5"
+          >
+            Read now
+          </button>
+        </div>
+      </section>
+
       <section id="how" className="w-full py-24 px-4">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white/90 tracking-tight">
